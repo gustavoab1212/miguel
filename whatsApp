@@ -1,0 +1,32 @@
+<!-- Link fixo do WhatsApp com mensagem -->
+<a href="https://wa.me/5511912345678?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20mudança%20residencial." target="_blank" class="whatsapp-link">
+    Fale Conosco no WhatsApp
+</a>
+
+<!-- CSS para estilo e animação -->
+<style>
+    .whatsapp-link {
+        position: fixed;           /* Fixa o link na tela */
+        bottom: 20px;              /* Distância da parte inferior da tela */
+        right: 20px;               /* Distância da parte direita da tela */
+        background-color: #25D366; /* Cor de fundo do botão */
+        color: white;              /* Cor do texto */
+        padding: 15px 20px;        /* Espaçamento interno do botão */
+        border-radius: 50px;       /* Borda arredondada */
+        font-weight: bold;         /* Texto em negrito */
+        text-decoration: none;     /* Remove o sublinhado do link */
+        font-size: 14px;           /* Tamanho da fonte */
+        z-index: 1000;             /* Garante que o link fique sobreposto aos outros elementos */
+        animation: blink 1s infinite; /* Animação de piscar */
+    }
+
+    /* Animação de piscar */
+    @keyframes blink {
+        0%, 50%, 100% {
+            opacity: 1;
+        }
+        25%, 75% {
+            opacity: 0.5;
+        }
+    }
+</style>
